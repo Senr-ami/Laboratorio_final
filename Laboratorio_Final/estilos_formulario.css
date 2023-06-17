@@ -1,0 +1,181 @@
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: "lato", sans-serif;
+}
+
+.divForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form {
+    background-color: white;
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2)
+}
+
+h2 {
+    font-size: 25px;
+    color: #148f77;
+    margin-bottom: 50px;
+}
+
+.inputContainer {
+    position: relative;
+    height: 45px;
+    width: 90%;
+    margin-bottom: 17px;
+}
+
+.input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #DADCE0;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+}
+
+::placeholder {
+    color: transparent;
+}
+
+.label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: white;
+    color: #DADCE0;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+}
+
+.submitButton {
+    display: block;
+    margin-left: auto;
+    padding: 15px 30px;
+    border: none;
+    background-color: #1abc9c;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+}
+  
+.submitButton:hover {
+    background-color:  #148f77;
+    transform: translateY(-2px);
+}
+
+.input:focus + .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1abc9c;
+}
+
+.input:focus {
+    border: 2px solid #1abc9c;
+}
+
+.input:not(:placeholder-shown)+ .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.error {
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.exito {
+    color: #148f77;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botonConsulta {
+    display: block;
+    padding: 15px 30px;
+    border: none;
+    background-color: #1abc9c;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+}
+  
+.botonConsulta:hover {
+    background-color:  #148f77;
+    transform: translateY(-2px);
+}
+
+
+/* Estilos consulta */
+
+.divConsulta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 10px;
+    border: 1px solid #DADCE0;
+}
+
+.table th {
+    background-color: #148f77;
+    color: white;
+    font-weight: bold;
+}
+
+.table tr:nth-child(even) {
+    background-color: #F5F7F9;
+}
+
+.table tr:hover {
+    background-color: #E4F0E7;
+    cursor: pointer;
+}
+
+.h2Consulta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
